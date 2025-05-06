@@ -1,28 +1,32 @@
-/* === GLOBAL STYLES === */
+/* === GLOBAL === */
 body {
   margin: 0;
   background-color: #1e3d35;
   color: #f2f0e9;
   font-family: 'Unna', serif;
   line-height: 1.8;
-  font-size: 1.1rem;
+}
+
+h1, h2 {
+  color: #ffe3ad;
 }
 
 a {
   color: #ffe3ad;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 a:hover {
+  text-decoration: underline;
   color: #e9b877;
 }
 
 /* === NAVBAR === */
 .navbar {
-  background-color: #142d27;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  background-color: #142d27;
   padding: 1rem 2rem;
   border-bottom: 2px solid #304f45;
 }
@@ -34,54 +38,84 @@ a:hover {
 
 .nav-logo {
   height: 40px;
-  margin-right: 0.75rem;
+  margin-right: 1rem;
   image-rendering: pixelated;
 }
 
-.studio-name {
+.studio-title {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.2;
+}
+
+.studio-jp {
+  font-size: 0.8rem;
+  color: #aad2c6;
+}
+
+.studio-en {
   font-weight: bold;
   font-size: 1.1rem;
-  color: #f2f0e9;
 }
 
-.nav-right a {
-  margin-left: 1.5rem;
-  text-decoration: none;
-  color: #f2f0e9;
+.nav-middle a {
+  margin: 0 1rem;
   font-weight: bold;
-  font-size: 0.95rem;
+  font-size: 1rem;
 }
 
-.nav-right a:hover {
-  color: #e9b877;
+.nav-right .search-bar {
+  background-color: #264d44;
+  color: #f2f0e9;
+  border: none;
+  padding: 0.4rem 0.8rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+}
+
+.search-bar:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
 
 /* === HERO === */
 .hero {
-  padding: 6rem 2rem 3rem;
+  background-color: #264d44;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   text-align: center;
-  background-color: #1e3d35;
+  padding: 2rem;
+}
+
+.hero-content {
+  max-width: 800px;
 }
 
 .hero h1 {
-  font-size: 2.8rem;
+  font-size: 3rem;
   margin-bottom: 1rem;
-  color: #ffe3ad;
 }
 
 .hero p {
-  font-size: 1.25rem;
-  max-width: 700px;
-  margin: 0 auto;
+  font-size: 1.3rem;
   color: #dddcd8;
 }
 
-/* === MAIN === */
+/* === DIVIDER === */
+.divider {
+  height: 6px;
+  background-color: #e9b877;
+  width: 80%;
+  margin: 0 auto;
+}
+
+/* === MAIN CONTENT === */
 .container {
   width: 90%;
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 3rem 0;
+  max-width: 800px;
+  margin: 4rem auto;
 }
 
 section {
@@ -89,25 +123,18 @@ section {
 }
 
 h2 {
-  color: #ffe3ad;
+  border-left: 5px solid #e9b877;
+  padding-left: 1rem;
   font-size: 1.8rem;
   margin-bottom: 1rem;
-  border-left: 4px solid #e9b877;
-  padding-left: 0.75rem;
-}
-
-.about p,
-.contact p {
-  font-size: 1.1rem;
-  color: #dddcd8;
 }
 
 /* === GAME CARD === */
 .game-card {
   background: #264d44;
   border: 2px dashed #e9b877;
-  padding: 1.25rem 1.5rem;
-  border-radius: 8px;
+  padding: 1.5rem;
+  border-radius: 10px;
   box-shadow: 2px 2px #142d27;
   color: #f2f0e9;
   font-size: 1.1rem;
