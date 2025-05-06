@@ -1,76 +1,75 @@
 body {
   margin: 0;
+  background-color: #1e3d35;
+  color: #f2f0e9;
   font-family: 'Unna', serif;
-  background-color: #f1e4c3;
-  color: #2b5b4e;
-  position: relative;
 }
 
-header {
-  text-align: center;
-  padding: 3rem 1rem 2rem;
-  background-color: #ffe3ad;
-  border-bottom: 4px solid #2b5b4e;
+/* HEADER NAV */
+.navbar {
+  background-color: #142d27;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+  border-bottom: 2px solid #304f45;
 }
 
-.logo {
-  max-width: 100px;
+.nav-left {
+  display: flex;
+  align-items: center;
+}
+
+.nav-logo {
+  height: 40px;
+  margin-right: 0.75rem;
   image-rendering: pixelated;
 }
 
-h1 {
-  margin: 0.5rem 0 0.25rem;
-  font-family: 'Press Start 2P', monospace;
-  color: #2b5b4e;
-  font-size: 1.25rem;
+.studio-name {
+  font-weight: bold;
+  font-size: 1.1rem;
+  color: #f2f0e9;
 }
 
-.tagline {
-  font-style: italic;
-  color: #2b5b4e;
-  font-size: 1rem;
+.nav-right a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: #f2f0e9;
+  font-weight: bold;
 }
 
-.container {
-  max-width: 700px;
-  margin: 0 auto;
-  padding: 2rem 1.5rem;
-}
-
-section {
-  margin-bottom: 3rem;
-}
-
-h2 {
-  color: #2b5b4e;
-  font-family: 'Press Start 2P', monospace;
-  font-size: 1rem;
-  margin-bottom: 1rem;
-}
-
-a {
-  color: #2b5b4e;
-  text-decoration: underline;
-}
-
-a:hover {
+.nav-right a:hover {
   color: #e9b877;
 }
 
-.game-card {
-  background: #fff9ec;
-  border: 2px dashed #e9b877;
-  padding: 1rem;
-  border-radius: 8px;
-  box-shadow: 2px 2px #2b5b4e30;
-  font-size: 0.95rem;
+/* HERO SECTION */
+.hero {
+  padding: 6rem 2rem;
+  text-align: center;
+  background-color: #1e3d35;
 }
 
+.tagline {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #ffe3ad;
+}
+
+.intro {
+  font-size: 1.1rem;
+  max-width: 600px;
+  margin: 0 auto;
+  color: #dddcd8;
+}
+
+/* FOOTER */
 footer {
   text-align: center;
-  background-color: #ffe3ad;
-  padding: 1.5rem 1rem;
-  border-top: 4px solid #2b5b4e;
+  padding: 2rem;
   font-size: 0.9rem;
+  background-color: #142d27;
+  border-top: 2px solid #304f45;
+  color: #bcbab4;
 }
 
