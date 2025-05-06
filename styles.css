@@ -5,6 +5,7 @@ body {
   color: #f2f0e9;
   font-family: 'Unna', serif;
   line-height: 1.8;
+  font-size: 1.1rem;
 }
 
 a {
@@ -57,19 +58,19 @@ a:hover {
 
 /* === HERO === */
 .hero {
-  padding: 6rem 2rem 4rem;
+  padding: 6rem 2rem 3rem;
   text-align: center;
   background-color: #1e3d35;
 }
 
 .hero h1 {
-  font-size: 2.5rem;
-  margin-bottom: 0.75rem;
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
   color: #ffe3ad;
 }
 
 .hero p {
-  font-size: 1.2rem;
+  font-size: 1.25rem;
   max-width: 700px;
   margin: 0 auto;
   color: #dddcd8;
@@ -77,9 +78,10 @@ a:hover {
 
 /* === MAIN === */
 .container {
-  max-width: 900px;
+  width: 90%;
+  max-width: 700px;
   margin: 0 auto;
-  padding: 3rem 2rem;
+  padding: 3rem 0;
 }
 
 section {
@@ -88,7 +90,7 @@ section {
 
 h2 {
   color: #ffe3ad;
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   margin-bottom: 1rem;
   border-left: 4px solid #e9b877;
   padding-left: 0.75rem;
@@ -96,7 +98,7 @@ h2 {
 
 .about p,
 .contact p {
-  font-size: 1.05rem;
+  font-size: 1.1rem;
   color: #dddcd8;
 }
 
@@ -104,11 +106,11 @@ h2 {
 .game-card {
   background: #264d44;
   border: 2px dashed #e9b877;
-  padding: 1rem 1.2rem;
+  padding: 1.25rem 1.5rem;
   border-radius: 8px;
   box-shadow: 2px 2px #142d27;
   color: #f2f0e9;
-  font-size: 1.05rem;
+  font-size: 1.1rem;
 }
 
 /* === FOOTER === */
