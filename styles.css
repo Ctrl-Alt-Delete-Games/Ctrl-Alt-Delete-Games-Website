@@ -1,11 +1,22 @@
+/* === GLOBAL STYLES === */
 body {
   margin: 0;
-  background-color: #1e3d35;
-  color: #f2f0e9;
+  background-color: #1e3d35; /* Deep green */
+  color: #f2f0e9; /* Soft ivory text */
   font-family: 'Unna', serif;
+  line-height: 1.6;
 }
 
-/* HEADER NAV */
+a {
+  color: #f2f0e9;
+  text-decoration: underline;
+}
+
+a:hover {
+  color: #e9b877;
+}
+
+/* === NAVBAR === */
 .navbar {
   background-color: #142d27;
   display: flex;
@@ -37,39 +48,62 @@ body {
   text-decoration: none;
   color: #f2f0e9;
   font-weight: bold;
+  font-size: 0.95rem;
 }
 
 .nav-right a:hover {
   color: #e9b877;
 }
 
-/* HERO SECTION */
-.hero {
-  padding: 6rem 2rem;
-  text-align: center;
-  background-color: #1e3d35;
-}
-
-.tagline {
-  font-size: 2rem;
-  margin-bottom: 1rem;
-  color: #ffe3ad;
-}
-
-.intro {
-  font-size: 1.1rem;
-  max-width: 600px;
+/* === MAIN CONTENT === */
+.container {
+  max-width: 800px;
   margin: 0 auto;
+  padding: 2rem 1.5rem;
+}
+
+/* Section Headings */
+section {
+  margin-bottom: 3rem;
+}
+
+h2 {
+  color: #ffe3ad;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  border-left: 4px solid #e9b877;
+  padding-left: 0.5rem;
+}
+
+/* About Paragraph */
+.about p {
+  font-size: 1.05rem;
   color: #dddcd8;
 }
 
-/* FOOTER */
+/* Game Card Styling */
+.game-card {
+  background: #264d44;
+  border: 2px dashed #e9b877;
+  padding: 1rem 1.2rem;
+  border-radius: 8px;
+  box-shadow: 2px 2px #142d27;
+  color: #f2f0e9;
+}
+
+/* Contact Section */
+.contact a {
+  font-weight: bold;
+}
+
+/* === FOOTER === */
 footer {
   text-align: center;
-  padding: 2rem;
-  font-size: 0.9rem;
   background-color: #142d27;
-  border-top: 2px solid #304f45;
+  padding: 2rem 1rem;
+  font-size: 0.9rem;
   color: #bcbab4;
+  border-top: 2px solid #304f45;
 }
+
 
